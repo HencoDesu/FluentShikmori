@@ -7,10 +7,10 @@ namespace FluentShikimori.Data
 	public class AnimeEntry : BaseEntry
 	{
 		[JsonProperty("name")]
-		public string Name { get; set; }
+		public string? Name { get; set; }
 		
 		[JsonProperty("image")]
-		public Dictionary<ImageLink, string> Images { get; set; }
+		public Dictionary<ImageLink, string>? Images { get; set; }
 		
 		[JsonProperty("status")]
 		public AnimeStatus Status { get; set; }

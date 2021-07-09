@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentShikimori", "src\FluentShikimori\FluentShikimori.csproj", "{A7F5D680-D0C2-48FE-ADFA-B047241B6E58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentShikimori.Tests", "tests\FluentShikimori.Tests\FluentShikimori.Tests.csproj", "{D5B348A3-556D-42FD-B3EB-FED3E9B3498B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{A7F5D680-D0C2-48FE-ADFA-B047241B6E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F5D680-D0C2-48FE-ADFA-B047241B6E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F5D680-D0C2-48FE-ADFA-B047241B6E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B348A3-556D-42FD-B3EB-FED3E9B3498B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B348A3-556D-42FD-B3EB-FED3E9B3498B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B348A3-556D-42FD-B3EB-FED3E9B3498B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B348A3-556D-42FD-B3EB-FED3E9B3498B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

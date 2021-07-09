@@ -34,10 +34,10 @@ namespace FluentShikimori.Data
 		public int Chapters { get; set; }
 
 		[JsonProperty("text")]
-		public string Text { get; set; }
+		public string? Text { get; set; }
 
 		[JsonProperty("text_html")]
-		public string RawText { get; set; }
+		public string? RawText { get; set; }
 
 		[JsonProperty("created_at")]
 		public DateTime CreateTime { get; set; }

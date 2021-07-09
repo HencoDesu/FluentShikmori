@@ -5,9 +5,9 @@ namespace FluentShikimori.Data
 	public class User
 	{
 		[JsonProperty("nickname")]
-		public string Nickname { get; set; }
+		public string? Nickname { get; set; }
 
 		[JsonProperty("avatar")]
-		public string Avatar { get; set; }
+		public string? Avatar { get; set; }
 	}
 }

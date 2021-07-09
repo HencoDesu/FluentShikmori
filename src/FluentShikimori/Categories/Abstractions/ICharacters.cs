@@ -17,12 +17,12 @@ namespace FluentShikimori.Categories.Abstractions
 		/// </summary>
 		/// <param name="id">Character id</param>
 		/// <returns>Character with that id</returns>
-		IFluentRequest<Character?> GetById(long id);
+		FluentRequest<Character?> GetById(long id);
 		
 		/// <summary>
 		/// Search character
 		/// </summary>
 		/// <returns>List of characters matches query</returns>
-		IFluentRequest<IReadOnlyCollection<Character>?> Search();
+		FluentRequest<IReadOnlyCollection<Character>?> Search();
 	}
 }

@@ -17,6 +17,6 @@ namespace FluentShikimori.Categories.Abstractions
 		/// </summary>
 		/// <param name="animeId">anime id</param>
 		/// <returns></returns>
-		IFluentRequest<IReadOnlyCollection<IDictionary<ImageLink, string>>?> Screenshots(long animeId);
+		FluentRequest<IReadOnlyCollection<IDictionary<ImageLink, string>>?> Screenshots(long animeId);
 	}
 }

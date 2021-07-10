@@ -21,5 +21,11 @@ namespace FluentShikimori
 		
 		/// <inheritdoc cref="IRanobe"/>
 		IRanobe Ranobe { get; }
+		
+		/// <inheritdoc cref="IUsers"/>
+		IUsers Users { get; }
+		
+		/// <inheritdoc cref="IUserRates"/>
+		IUserRates UserRates { get; }
 	}
 }

@@ -11,7 +11,10 @@ namespace FluentShikimori.Categories
 		public AnimesCategory(HttpClient httpClient, string baseUrl) 
 			: base(httpClient, baseUrl + "/animes")
 		{ }
-		
+
+		public new GetAnimesFluentRequest Get()
+			=> new(string.Empty, GetAsync<IReadOnlyCollection<AnimeEntry>>);
+
 		public FluentRequest<IReadOnlyCollection<IDictionary<ImageLink, string>>?> Screenshots(long animeId)
 			=> new ($"/{animeId}/screenshots", GetAsync<IReadOnlyCollection<IDictionary<ImageLink, string>>>);
 	}

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using FluentShikimori.Data;
+﻿using FluentShikimori.Data;
 using FluentShikimori.Requests;
 
 namespace FluentShikimori.Categories.Abstractions
@@ -16,7 +15,7 @@ namespace FluentShikimori.Categories.Abstractions
 		/// Get all user rates
 		/// </summary>
 		/// <returns></returns>
-		FluentRequest<IReadOnlyCollection<UserRate>?> Get();
+		GetUserRatesFluentRequest Get();
 
 		/// <summary>
 		/// Get user rate by it's id

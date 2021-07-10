@@ -13,6 +13,12 @@ namespace FluentShikimori.Categories.Abstractions
 	public interface IAnimes : IBaseEntryCategory<AnimeEntry>
 	{
 		/// <summary>
+		/// Get list of animes matching criteria
+		/// </summary>
+		/// <returns>List of entries that matches requested parameters</returns>
+		new GetAnimesFluentRequest Get();
+		
+		/// <summary>
 		/// Get anime screenshots
 		/// </summary>
 		/// <param name="animeId">anime id</param>

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using FluentShikimori.Data;
 using Newtonsoft.Json;
 
 namespace FluentShikimori.Categories
@@ -60,6 +61,9 @@ namespace FluentShikimori.Categories
 				{
 					case IEnumerable enumerable:
 						stringBuilder.AppendFormat(appendFormat, name, BuildEnumerable(enumerable));
+						break;
+					case RateStatus:
+						stringBuilder.AppendFormat(appendFormat, name, value.ToString()?.ToLower());
 						break;
 					default:
 						stringBuilder.AppendFormat(appendFormat, name, value);

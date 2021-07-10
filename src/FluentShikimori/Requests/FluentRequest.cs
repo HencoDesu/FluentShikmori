@@ -8,11 +8,12 @@ namespace FluentShikimori.Requests
 	public class FluentRequest<TResult>
 	{
 		private readonly string _requestPath;
-		private readonly Func<string, IReadOnlyDictionary<string, object>, Task<TResult>> _execute;
-		private readonly Dictionary<string, object> _parameters = new();
+		private readonly Func<string, IReadOnlyDictionary<string, object>, Task<TResult?>> _execute;
+		
+		protected readonly Dictionary<string, object> Parameters = new();
 
 		public FluentRequest(string requestPath, 
-							 Func<string, IReadOnlyDictionary<string, object>, Task<TResult>> execute)
+							 Func<string, IReadOnlyDictionary<string, object>, Task<TResult?>> execute)
 		{
 			_execute = execute;
 			_requestPath = requestPath;
@@ -21,14 +22,14 @@ namespace FluentShikimori.Requests
 		public FluentRequest<TResult> WithParameter(string parameterName, 
 													object parameterValue)
 		{
-			_parameters[parameterName] = parameterValue;
+			Parameters[parameterName] = parameterValue;
 			return this;
 		}
 
-		public Task<TResult> ExecuteAsync() 
-			=> _execute(_requestPath, _parameters);
+		public Task<TResult?> ExecuteAsync() 
+			=> _execute(_requestPath, Parameters);
 
-		public TaskAwaiter<TResult> GetAwaiter()
+		public TaskAwaiter<TResult?> GetAwaiter()
 			=> ExecuteAsync().GetAwaiter();
 	}
 }

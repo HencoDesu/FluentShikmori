@@ -2,7 +2,7 @@
 
 namespace FluentShikimori.Data
 {
-	public class User
+	public class User : BaseEntry
 	{
 		[JsonProperty("nickname")]
 		public string? Nickname { get; set; }

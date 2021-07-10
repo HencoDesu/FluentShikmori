@@ -16,6 +16,8 @@ namespace FluentShikimori
 			Mangas = new MangasCategory(httpClient, API_URL);
 			People = new PeopleCategory(httpClient, API_URL);
 			Ranobe = new RanobeCategory(httpClient, API_URL);
+			Users = new UsersCategory(httpClient, API_URL);
+			UserRates = new UserRatesCategory(httpClient, API_URL);
 		}
 
 		public IAnimes Animes { get; }
@@ -23,5 +25,7 @@ namespace FluentShikimori
 		public IMangas Mangas { get; }
 		public IPeople People { get; }
 		public IRanobe Ranobe { get; }
+		public IUsers Users { get; }
+		public IUserRates UserRates { get; }
 	}
 }

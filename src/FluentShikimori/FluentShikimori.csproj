@@ -3,6 +3,12 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.1.0</PackageVersion>
+        <Title>FluentShikimori</Title>
+        <Authors>HencoDesu</Authors>
+        <Description>Fluent wrapper for https://shikimori.one API</Description>
+        <RepositoryUrl>https://github.com/HencoDesu/FluentShikmori</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
